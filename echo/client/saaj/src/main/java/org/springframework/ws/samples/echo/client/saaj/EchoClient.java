@@ -38,11 +38,11 @@ public class EchoClient {
 
 	private static final Logger logger = LoggerFactory.getLogger(EchoClient.class);
 
-	private SOAPConnectionFactory connectionFactory;
+	private final SOAPConnectionFactory connectionFactory;
 
-	private MessageFactory messageFactory;
+	private final MessageFactory messageFactory;
 
-	private URL url;
+	private final URL url;
 
 	public EchoClient(String url) throws SOAPException, MalformedURLException {
 

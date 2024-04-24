@@ -35,8 +35,7 @@ public class JmsMain {
 
 	@Bean
 	CommandLineRunner getFlights(JmsClient client) {
-		return args -> {
+		return args ->
 			client.getFlights();
-		};
 	}
 }

@@ -13,7 +13,7 @@ public class FrequentFlyerDetails implements UserDetails {
 	private static final List<GrantedAuthority> GRANTED_AUTHORITIES = List
 			.of(new SimpleGrantedAuthority("ROLE_FREQUENT_FLYER"));
 
-	private FrequentFlyer frequentFlyer;
+	private final FrequentFlyer frequentFlyer;
 
 	public FrequentFlyerDetails(FrequentFlyer frequentFlyer) {
 		this.frequentFlyer = frequentFlyer;

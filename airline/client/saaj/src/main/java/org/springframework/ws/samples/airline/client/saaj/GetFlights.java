@@ -41,13 +41,13 @@ public class GetFlights {
 
 	public static final String PREFIX = "airline";
 
-	private SOAPConnectionFactory connectionFactory;
+	private final SOAPConnectionFactory connectionFactory;
 
-	private MessageFactory messageFactory;
+	private final MessageFactory messageFactory;
 
-	private URL url;
+	private final URL url;
 
-	private TransformerFactory transfomerFactory;
+	private final TransformerFactory transfomerFactory;
 
 	public GetFlights(String url) throws SOAPException, MalformedURLException {
 		connectionFactory = SOAPConnectionFactory.newInstance();

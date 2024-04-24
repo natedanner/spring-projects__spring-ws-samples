@@ -56,7 +56,7 @@ public class GetFlights extends WebServiceGatewaySupport {
             throw new RuntimeException(e);
         }
         System.out.println("Got " + response.getFlight().size() + " results");
-		if (response.getFlight().size() > 0) {
+		if (!response.getFlight().isEmpty()) {
 			// Book the first flight using John Doe as a frequent flyer
 			BookFlightRequest bookFlightRequest = new BookFlightRequest();
 			bookFlightRequest.setFlightNumber(response.getFlight().get(0).getNumber());

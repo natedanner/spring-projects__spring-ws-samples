@@ -12,7 +12,7 @@ import org.springframework.ws.samples.airline.service.NoSuchFrequentFlyerExcepti
  */
 public class StubFrequentFlyerSecurityService implements FrequentFlyerSecurityService {
 
-	private FrequentFlyer john;
+	private final FrequentFlyer john;
 
 	public StubFrequentFlyerSecurityService() {
 		this.john = new FrequentFlyer("John", "Doe", "john", "changeme");

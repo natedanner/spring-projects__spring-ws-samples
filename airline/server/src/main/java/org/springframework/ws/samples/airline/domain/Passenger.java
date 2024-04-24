@@ -74,11 +74,7 @@ public class Passenger implements Serializable {
 		if (!getFirstName().equals(passenger.getFirstName())) {
 			return false;
 		}
-		if (!getLastName().equals(passenger.getLastName())) {
-			return false;
-		}
-
-		return true;
+		return !!getLastName().equals(passenger.getLastName());
 	}
 
 	public int hashCode() {
